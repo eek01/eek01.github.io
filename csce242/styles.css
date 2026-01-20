@@ -1,0 +1,34 @@
+/*Structure*/
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #fcf6f6;
+}
+#content {
+    
+}
+
+/*Navigation*/
+#nav {
+    color: #f9bbc6;
+    background: #594246;
+    padding: 3px;
+    border-radius: 3px;
+}
+#nav:hover {
+    background: #8b7b7e;
+}
+a {
+    text-decoration: none;
+    color: #793c47;
+}
+
+/*Typography*/
+h1 {
+    color: #F2778D;
+}
+h2 {
+    color: #914755;
+}
+p {
+    color: #793c47;
+}
