@@ -43,13 +43,13 @@ body {
 }
 
 /*Images*/
-.first-row-image {
-    text-align: center;
-    margin: 0 20px;
-
+.first-row-image img {
+    display: block;
+    margin: auto;
+    padding: 0 20px;
 }
-.bottom-row-image {
-    text-align: center;
+.bottom-row-image img {
+    display: block;
     margin: auto;
 }
 
@@ -83,7 +83,7 @@ body {
 }
 #important-txt {
     color: #5E888C;
-    margin: 20px 5px;
+    margin: 40px 5px;
 }
 .first-row h3 {
     text-align: center;
@@ -101,7 +101,9 @@ body {
 @media (min-width: 768px) {
     .one {
         flex: 1;
-        /*max-width: 50%;*/
+    }
+    .four {
+        flex: 4;
     }
     .flex-container, .rowof3 {
         display: flex;
