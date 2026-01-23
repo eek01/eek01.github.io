@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex Demo</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--block level - creates space above and below ex) div, p, h1, li...-->
+        <!--inline element - no space above or below ex) a, b, img, i...-->
+        <div id="main-content">
+            <header id="main-header">
+                <h1>Flex Demonstration</h1>
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <!-- "#" means go to the current page-->
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pictures</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main id="content">
+                <h2>My Stuff</h2>
+                <div id="gallery" class="columns">
+                    <section class="one">
+                        <h3>Title</h3>
+                        <p>some textttt</p>
+                    </section>
+                    <section class="one">
+                        <h3>Title</h3>
+                        <p>some textttt</p>
+                    </section>
+                    <section class="one">
+                        <h3>Title</h3>
+                        <p>some textttt</p>
+                    </section>
+                </div>
+            </main>
+            <footer id="main-footer">
+
+            </footer>
+        </div>
+    </body>
+</html>
+
+<!-- notes on flex box assignment: parent div, has columns, in right column make four sections, each flex:1;-->
+<!-- for body, margin auto, parent w class columns,w two items, put div around img,  -->

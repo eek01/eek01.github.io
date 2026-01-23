@@ -1,14 +1,33 @@
 /*Structure*/
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #f5d8d8;
 }
 #content {
-    width: 75%;
+    width: 80%;
     margin: auto;
-    background: #f5d8d8;
-    padding: 10px 20px;
-    box-shadow: 10px 10px #b86271;
-    border-radius: 7px;
+}
+#main-content {
+
+}
+
+/*Assignments*/
+#assignments section{
+    background: #F2778D;
+    padding: 5px;
+    margin: 5px;
+}
+.assign-img {
+    text-align: center;
+}
+section h3 {
+    text-align: center;
+}
+/*Projects*/
+#projects section{
+    background: #F2778D;
+    padding: 5px;
+    margin: 5px;
 }
 
 /*Navigation*/
@@ -23,16 +42,28 @@ body {
 }
 a {
     text-decoration: none;
-    color: #793c47;
+    color: #672a35;
 }
 
 /*Typography*/
-h1 {
+#main-header h1 {
     color: #F2778D;
+    text-align: center;
 }
-h2 {
+#main-content h2 {
     color: #b86271;
+    text-align: center;
 }
 p {
     color: #793c47;
+}
+
+/*Larger Devices*/
+@media (min-width: 768px) {
+    .columns {
+        display: flex;
+    }
+    .one{
+        flex:1;
+    }
 }
