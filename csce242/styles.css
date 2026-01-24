@@ -66,4 +66,8 @@ p {
     .one{
         flex:1;
     }
+    #projects {
+        width: 33.3%;
+        margin: auto;
+    }
 }
