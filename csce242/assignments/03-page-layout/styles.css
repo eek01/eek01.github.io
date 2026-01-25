@@ -132,3 +132,9 @@ body {
         display: block;
     }
 }
+@media (max-width: 767px) {
+    .first-row-image {
+        width: 180px;
+        margin: auto;
+    }
+}
