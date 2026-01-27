@@ -1,0 +1,89 @@
+/* Main Structure */
+#main-header {
+    background: #0D0D0D;
+    color: #FFFFFF;
+    width:70%;
+    margin:auto;    /* Center */
+}
+footer {
+    background-color: #730217;
+}
+#main-footer {
+    color: #FFFFFF;
+    width:70%;
+    margin:auto;    /* Center */
+}
+#main-footer h3 {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+/* NAVIGATION */
+nav ul {
+    padding-left:0;     /* Remove indentation */
+}
+
+nav li {
+    list-style-type:none;   /* Remove bullet */
+}
+nav a {
+    text-decoration: none;  /* Remove underline */
+}
+#main-header nav {
+    color: white;
+}
+#header-nav-one {
+    font-size: small;
+}
+#header-nav-one a:hover {
+    background: #CC2F41;
+}
+#main-footer a{
+    color: #FFFFFF;
+}
+#main-footer a:hover{
+    background: #CC2F41;
+}
+#footer-nav-top {
+    padding: 20px 0;
+}
+#footer-nav-top-social li{
+    padding: 0 10px;
+}
+#footer-nav-bottom {
+    background: #0D0D0D;
+}
+
+/* Larger devices */
+@media (min-width: 768px) {
+    .columns {
+        display:flex;
+    }
+    .one {
+        flex:1;
+    }
+    .two {
+        flex:2;
+    }
+    .three {
+        flex:3;
+    }
+    #header-nav-middle {
+        justify-content: space-between;
+        gap:1em;
+    }
+    #footer-nav-top {
+        /*specifies where space is supposed to be*/
+        justify-content: space-between;
+        gap:1em;
+    }
+    #footer-nav-middle {
+        justify-content: space-between;
+        gap:1em;
+    }
+    #footer-nav-bottom ul{
+        display: flex;
+    }
+    #footer-nav-bottom li {
+        flex:1;
+    }
+}
