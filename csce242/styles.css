@@ -68,3 +68,9 @@ p {
         margin: auto;
     }
 }
+
+/*flex-wrap: wrap; TO MAKE ASSIGNMETSS AND PROJECTS GO TO NEXT LINE*/
+/*img {
+    max-width: 100%
+}*/
+/*^^ ensures ur img is never bigger than the container its in*/
