@@ -9,6 +9,9 @@ body {
 }
 
 /*Assignments*/
+#assignments {
+    flex-wrap: wrap;
+}
 #assignments section{
     background: #F2778D;
     padding: 5px;

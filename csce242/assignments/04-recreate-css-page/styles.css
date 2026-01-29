@@ -24,7 +24,7 @@ body {
 #img-row {
     width:65%;
     margin: auto;
-    padding: 60px;
+    padding: 60px 0;
 }
 #main-content-bottom-color {
     background: #EDEDED
