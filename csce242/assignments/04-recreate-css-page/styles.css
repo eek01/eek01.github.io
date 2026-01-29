@@ -1,62 +1,332 @@
 /* Main Structure */
-#main-header {
+body {
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#main-header-bg {
     background: #0D0D0D;
+}
+#main-header-content, #header-nav-bottom {
     color: #FFFFFF;
     width:70%;
     margin:auto;    /* Center */
+}
+#subheader-bg {
+    display:none;
+    /* background: #730217;  
+    border: 1px solid #0D0D0D;  */
+}
+#quote {
+    display: block;
+    margin: auto;
+    padding: 50px;
+}
+#img-row {
+    width:65%;
+    margin: auto;
+    padding: 60px;
+}
+#main-content-bottom-color {
+    background: #EDEDED
+}
+#main-content-bottom {
+    width: 70%;
+    margin: auto;
+}
+#main-bottom-one-logos {
+    display: flex;
+}
+#main-bottom-one-logos button {
+    margin: 0;
+    margin-right: 30px;
 }
 footer {
     background-color: #730217;
 }
 #main-footer {
     color: #FFFFFF;
+}
+#main-footer-nav-color {
+    background: #730217;
+}
+#main-footer-nav-width, #footer-nav-bottom-width {
     width:70%;
     margin:auto;    /* Center */
+}
+#footer-nav-top-social {
+    display: flex;
+    justify-content: center;
+}
+#footer-nav-bottom-color {
+    background: #0D0D0D;
+    border-top: 1px solid #FFFFFF;
 }
 #main-footer h3 {
     border-bottom: 1px solid #FFFFFF;
 }
 
-/* NAVIGATION */
-nav ul {
+/* ASIDEEEE */
+.side {
+    position: relative;
+}
+#side-research, #side-edu, #side-center {
+    color: #FFFFFF;
+    background: #730217;
+    width: 90%;
+    padding: 20px 40px; 
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.3);
+}
+aside nav{
+    background: #0D0D0D;
+}
+button {
+    /*need to make this a square w a white border*/
+    border: 2px solid white;
+    /* width: 200px; */
+    margin: auto;
+    text-align: center;
+    background: #0D0D0D;
+    padding: 15px 30px;
+    color:#FFFFFF;
+    font-size: medium;
+    font-weight: bolder;
+    letter-spacing: -1;
+}
+button a{
+    color: #FFFFFF;
+}
+button:hover, button:hover a {
+    background: #FFFFFF;
+    color:#730217;
+    border-color: #730217;
+}
+
+/* IMAGES */
+#article-two img {
+    border-radius: 50%;
+    margin: 20px;
+}
+img {
+    max-width: 100%;
+}
+
+/* NAVIGATIONNNNN */
+.common-nav ul,#main-content-bottom-button ul, #main-bottom-two ul {
     padding-left:0;     /* Remove indentation */
 }
 
-nav li {
+.common-nav li, #main-content-bottom-button li, #main-bottom-two li {
     list-style-type:none;   /* Remove bullet */
 }
-nav a {
+.common-nav a, #main-content-bottom-button a {
     text-decoration: none;  /* Remove underline */
+    color: #FFFFFF;
+    font-weight: bold;
 }
-#main-header nav {
-    color: white;
-}
+.common-nav a:hover{
+    background: #CC2F41;
+} 
 #header-nav-one {
+    display: none;
+}
+#header-nav-one, #footer-nav-bottom {
     font-size: small;
 }
-#header-nav-one a:hover {
-    background: #CC2F41;
+#header-nav-one, #footer-nav-bottom li{
+    list-style-type:none;
+    padding: 5px 5px 5px 0;
 }
-#main-footer a{
+#header-nav-one li:not(:last-child)::after {
+    content:"|";
+    margin: 0 10px;
+    color: lightgray;
+}
+#footer-nav-bottom li:not(:last-child)::after {
+    content:"|";
     color: #FFFFFF;
+    margin: 0 10px;
 }
-#main-footer a:hover{
+#header-nav-middle {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#header-nav-middle ul, #header-nav-bottom ul, #main-bottom-one ul {
+    padding-left:0;
+}
+#header-nav-middle li, #main-bottom-one li{
+    list-style-type:none;
+}
+#header-nav-middle a, #header-nav-bottom a {
+    text-decoration: none;  /* Remove underline */
+    color: #FFFFFF;
+    font-weight: bold;
+}
+#header-nav-bottom {
+    background: #730217;
+}
+#header-nav-bottom li {
+    list-style-type:none;
+    letter-spacing: -1px;
+    font-size:medium;
+    padding: 0 20px;
+}
+#img-row a {
+    font-weight: bold;
+    color: #730217;
+    text-decoration: none;  /* Remove underline */
+}
+#img-row h3 {
+    padding: 0 20px;
+}
+#img-row p {
+    color: #0D0D0D;
+}
+#main-content-bottom-button ul{
+    padding-left:0;
+    width: 60%;
+    margin: auto;
+    padding: 40px;
+}
+#main-content-bottom-button li{
+    list-style-type:none;
+    margin: auto;
+    border: 2px solid white;
+    text-align: center;
+    background: #730217;
+    padding: 15px;
+    color:#FFFFFF;
+    font-size: medium;
+    font-weight: bolder;
+    letter-spacing: -1;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.3);
+}
+#main-content-bottom-button li:hover{
+    background: #FFFFFF;
+    border-color: #730217;
+    color: #730217;
+}
+#main-content-bottom-button li:hover a {
+    color: #730217;
+}
+#main-bottom-one h2:hover a{
+    color: #FFFFFF;
     background: #CC2F41;
+}
+#main-bottom-one a {
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;
+}
+#main-bottom-three ul {
+    padding-left:0;
+}
+#main-bottom-three li {
+    text-decoration: underline;
+    list-style-type:none;
+}
+#main-bottom-three a, #main-bottom-two a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #730217;
+}
+#main-bottom-three p {
+    margin: 0;
+}
+#main-bottom-two li{
+    padding: 10px 0;
 }
 #footer-nav-top {
     padding: 20px 0;
 }
 #footer-nav-top-social li{
+    list-style-type:none;
     padding: 0 10px;
 }
-#footer-nav-bottom {
+#footer-nav-middle {
+    line-height: 30px;
+}
+.footer-column ul {
+    padding-left:0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-column li {
+    list-style-type:none;
+    flex-wrap: wrap;
+}
+.footer-column a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-right: 100px;
+}
+.footer-column a:hover {
+    background: #CC2F41;
+}
+#footer-nav-bottom ul{
     background: #0D0D0D;
+    text-align: center;
+    flex-wrap: wrap;
+}
+#footer-nav-bottom a {
+    white-space: nowrap;
+}
+
+/* TYPOGRAPHY */
+#article-one {
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    font-size: medium;
+    line-height: 40px;
+}
+#article-two {
+    width: 65%;
+    margin: auto;
+}
+#quote h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
+    color: #730217;
+    font-size: x-large;
+    line-height: 40px;
+}
+#quote p {
+    font-weight: bold;
+}
+#main-content-bottom h1 {
+    padding: 40px 0 0 0;
+    font-size: 60px;
+    color: #730217;
+    text-align: center;
+}
+#main-content-bottom-p {
+    text-align: center;
+}
+#main-bottom-one h2 a{
+    color: #730217;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#main-bottom-one {
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+}
+#main-bottom-two {
+    letter-spacing: -1px;
+    font-size: small;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+}
+#main-bottom-three {
+    text-align: center;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 /* Larger devices */
 @media (min-width: 768px) {
     .columns {
         display:flex;
+    }
+    .footer-block {
+        display: block;
     }
     .one {
         flex:1;
@@ -67,9 +337,61 @@ nav a {
     .three {
         flex:3;
     }
+    #header-nav-one {
+        display: block;
+    }
     #header-nav-middle {
         justify-content: space-between;
         gap:1em;
+    }
+    #header-nav-bottom {
+        display: flex;
+        justify-content: flex-end;
+    }
+    #subheader-bg {
+    display:flex;
+    background: #730217;  
+    border: 1px solid #0D0D0D; 
+}
+    #side-research {
+        position: absolute;
+        left: 85px;
+        top:-240px;
+        color: #FFFFFF;
+        background: #730217;
+        width: 665px;
+        height:235px;
+        padding: 20px 40px;
+    }
+    #side-edu {
+        position: absolute;
+        right: 85px;
+        top:-260px;
+        color: #FFFFFF;
+        background: #730217;
+        width: 665px;
+        height:255px;
+        padding: 20px 40px;
+    }
+    #side-center {
+        position: absolute;
+        left: 85px;
+        top:-290px;
+        color: #FFFFFF;
+        background: #730217;
+        width: 450px;
+        height:235px;
+        padding: 20px 40px;
+    }
+    #main-bottom-one, #main-bottom-two {
+        border-right: 2px solid lightgray;
+    }
+    
+    #main-bottom-one h2, #main-bottom-two, #main-bottom-three {
+        text-align: left;
+    }
+    #main-bottom-two nav {
+        justify-content: space-around;
     }
     #footer-nav-top {
         /*specifies where space is supposed to be*/
