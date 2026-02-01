@@ -9,7 +9,7 @@ body {
 }
 
 /*Assignments*/
-#assignments {
+#assignments, #projects {
     flex-wrap: wrap;
 }
 #assignments section{
@@ -66,10 +66,7 @@ p {
     .one{
         flex:1;
     }
-    #projects {
-        width: 33.3%;
-        margin: auto;
-    }
+
 }
 
 /*flex-wrap: wrap; TO MAKE ASSIGNMETSS AND PROJECTS GO TO NEXT LINE*/
