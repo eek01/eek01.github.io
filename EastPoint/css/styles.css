@@ -1,0 +1,42 @@
+body {
+    background-color: darksalmon;
+}
+
+button {
+    border: 2px solid pink;
+    background: green;
+}
+
+button:hover {
+    background: yellow;
+    border: 2px solid blue;
+}
+
+ol {
+    display: flex;
+    list-style-type: none;
+}
+li {
+    padding: 0 50px;
+}
+
+h1 {
+    color:darkolivegreen;
+    text-align: center;
+}
+
+table {
+    border: 2px solid purple;
+    border-collapse: collapse;
+    margin:5px;
+}
+th, td {
+    border: 2px solid purple;
+    padding: 5px;
+}
+th {
+    background: cyan;
+}
+img {
+    border: 5px groove navy;
+}

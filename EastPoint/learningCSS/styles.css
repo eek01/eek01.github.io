@@ -1,0 +1,22 @@
+button {
+    color:cadetblue;
+    background: navy;
+    border: 2px solid white;
+}
+
+button:hover {
+    color:navy;
+    background: cadetblue;
+    border: 2px solid black;
+}
+
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    padding: 0 30px;
+}

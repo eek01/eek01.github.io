@@ -1,0 +1,70 @@
+/* Structure */
+body {
+    background: pink;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#content {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+#date, #geometry, #frame {
+    margin: 0 40px;
+    padding: 0 0 100px 0;
+    background: #ECF2D5;
+    border: 2px solid #C6D9A9;
+}
+
+/* triangle code from https://www.w3schools.com/howto/howto_css_shapes.asp */
+#triangle {
+    display: none;
+    margin: auto;
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #9c2a3f;
+}
+/* Date picker!!! */
+#date-picker-form, #date p {
+    display: flex;
+    justify-content: start;
+    margin: 10px;
+}
+
+#div-img {
+    margin-top: 50px;
+    border:none;
+}
+
+/* Navigation */
+
+/*Images*/
+
+/*Typography*/
+header, footer {
+    text-align: center;
+}
+header h1 {
+    color: #D95970;
+}
+header h2 {
+    color: #9c2a3f;
+}
+#content h3 {
+    color: #D95970;
+}
+footer p {
+    color: #D95970;
+}
+
+/* Larger devices */
+@media (min-width: 768px) {
+    .columns {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .one {
+        flex:1;
+    }
+}

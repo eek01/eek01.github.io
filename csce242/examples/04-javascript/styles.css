@@ -1,0 +1,121 @@
+#ball {
+    background-color: cornflowerblue;
+    width: 100px;
+    line-height: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+/*ball animation*/
+@keyframes bounce {
+    0% {
+        background-color: deeppink;
+        top: 0px;
+    }
+    50% {
+        background-color: cornflowerblue;
+        top: 200px;
+    }
+    100% {
+        background-color: deeppink;
+        top: 0px;
+    }
+}
+
+#ball h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+
+/*Structure*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:url(images/squirrel-img.jpg);
+}
+
+#content {
+    background: rgba(218, 219, 169, 0.8);
+    width: 75%;
+    margin:auto;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px lightgreen;
+}
+
+/*Navigation*/
+a {
+    text-decoration: none;
+    background: lightpink;
+    color: black;
+    padding: 4px;
+    border-radius: 3px;
+    margin: 3px;
+}
+a:hover {
+    background: lightsalmon;
+}
+
+/*Images*/
+img {
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid orange;
+    border-radius: 5px;
+}
+
+/*Tables*/
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid;
+    padding: 4px;
+}
+th {
+    background: lightcoral;
+}
+
+/*Typography*/
+h1 {
+    color: lightcoral;
+    font-style: italic;
+}
+
+h2 {
+    color: blueviolet;
+}
+
+#instruc {
+    font-style: italic;
+}
+
+/*element curly brace
+proper: value;
+curly brace*/
+
+/*
+html color names: https://www.w3schools.com/colors/colors_names.asp
+create color themes: https://color.adobe.com/
+tint and shade generator: https://maketintsandshades.com/
+*/
+
+/*
+id = #
+- only one of element on page
+class = .
+- can have multiple
+*/
+
+/*
+div - stands for divide; basically a rectangle that holds information
+
+*/
