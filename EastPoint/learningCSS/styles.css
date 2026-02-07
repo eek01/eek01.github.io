@@ -20,3 +20,12 @@ ol {
 li {
     padding: 0 30px;
 }
+
+#secret {
+    color: red;
+}
+
+.secret-p-man {
+    color:blue;
+    text-align: right;
+}
