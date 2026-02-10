@@ -1,6 +1,9 @@
 /*MAIN STRUCTURE*/
+:root {
+    --main-header: #FFF2F8;
+}
 #main-header {
-    background: #FFF2F8;
+    background:var(--main-header);
     display: flex;
     justify-content: space-between;
 }
@@ -43,6 +46,9 @@
 }
 
 /*IMAGES*/
+img {
+    width: 100%;
+}
 
 /*TYPOGRAPHY*/
 #main-header li, #main-header h1 {

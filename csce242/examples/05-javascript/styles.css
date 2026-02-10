@@ -1,9 +1,16 @@
+/*VAIRBLES*/
+:root {
+    --main-background: #bde0fe;
+    --main-header: #ffafcc;
+}
+
+
 /*Work on layout for mobile first!!*/
 /*w3schools/media smthhh?*/
 /* Main Structure */
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background:#bde0fe;
+    background:var(--main-background);
 }
 
 #main-content {
@@ -14,6 +21,16 @@ body {
 #main-header {
     background:#ffafcc;
     position: relative;
+}
+#gallery {
+    flex-wrap: wrap;
+}
+#gallery section {
+    background-color: white;
+    padding: 10px;
+    margin:5px;
+    min-width: 29%;
+    min-height: 250px;
 }
 
 /* #content {
@@ -60,7 +77,7 @@ body {
 
 /* Gallery */
 #gallery section {
-    background:lightgray;
+    background:aliceblue;
     padding:5px;
     border-radius:5px;
     margin:5px;
@@ -115,6 +132,12 @@ img {
 }
 
 /* Navigation */
+#toggle-nav div {
+    width: 25px;
+    height:2px;
+    background-color: darkslateblue;
+    margin:6px 0;
+}
 nav ul {
     padding-left:0;     /* Remove indentation */
 }
@@ -130,14 +153,60 @@ nav a {
     text-decoration: none;  /* Remove underline */
 }
 
+/*BALLL*/
+#ball-playground {
+    position: relative;
+}
+#ball {
+    width:25px;
+    height: 25px;
+    background: magenta;
+    border-radius: 50%;
+    position: absolute;
+}
+.bounce {
+    animation-name: bounce;
+    animation-duration: 2s;
+    /*how many times to repeat animation*/
+    animation-iteration-count: infinite;
+}
+@keyframes bounce {
+    0% {
+        top:0px;
+        background: magenta;
+    }
+    20% {
+         background: orange; 
+        }
+    50% {
+         background: green; 
+         top:200px;
+        }
+    75% {
+         background: blue; 
+        }
+    100% {
+         background: rebeccapurple; 
+         top:0px;
+        }
+}
+
+
 /* Typography */
 #main-header h1 {
     text-align: center;
     padding-top:10px;
 }
 
+.hide-small {
+    display: none;
+}
+
 /* Larger devices */
 @media (min-width: 768px) {
+    #toggle-nav {
+        display: none;
+    }
     #content {
         /*specifies where space is supposed to be*/
         justify-content: space-between;
@@ -184,5 +253,7 @@ nav a {
     .item div {
         flex:5;
     }
-
+    .hide-small {
+        display: flex;
+    }
 }
