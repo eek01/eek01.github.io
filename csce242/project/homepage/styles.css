@@ -1,0 +1,72 @@
+/*MAIN STRUCTURE*/
+#main-header {
+    background: #FFF2F8;
+    display: flex;
+    justify-content: space-between;
+}
+#shop-mens-womens {
+    background: #FFC3E0;
+}
+#main-img-collage {
+    background: #FFF2F8;
+    margin: 35px;
+}
+#shop-sale-txt {
+    background: #0571D3;
+    width: 100%;
+    text-align: center;
+}
+#quick-shop {
+    background: #FFF3B1;
+}
+#main-footer {
+    background: #0571D3;
+}
+#main-footer-content {
+    width: 35%;
+    margin: auto;
+}
+
+/*NAVIGATION*/
+#main-header ul {
+    padding-left: 0;
+    text-align: center;
+    display: flex;
+}
+#main-header li {
+    list-style-type: none;
+    padding: 10px;
+    flex:1;
+}
+#main-header a {
+    text-decoration: none;
+}
+
+/*IMAGES*/
+
+/*TYPOGRAPHY*/
+#main-header li, #main-header h1 {
+    color: #0571D3;
+}
+#shop-sale-txt h1 {
+    color: #FFC3E0;
+}
+#quick-shop h1 {
+    color: #0571D3;
+}
+#main-footer-content {
+    color: #FFFFFF;
+}
+#mission {
+    flex-wrap: wrap;
+}
+
+/*LARGER DEVICES*/
+@media (min-width: 768px) {
+    .one {
+        flex: 1;
+    }
+    .columns {
+        display: flex;
+    }
+}
