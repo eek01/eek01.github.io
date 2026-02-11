@@ -1,3 +1,12 @@
+#main-content {
+    width: 70%;
+    margin:auto;
+    background: lightblue;
+    padding: 15px;
+}
+#about-body {
+    background-image: url("images/Happy-Feet.jpg");
+}
 button {
     color:cadetblue;
     background: navy;
