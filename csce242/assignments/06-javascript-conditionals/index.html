@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <title>JavaScript:Conditionals</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -11,7 +13,7 @@
         <main id="main-content">
             <nav>
                 <div id="toggle-nav">
-                    <p>&#9660;</p>
+                    <p id="p-toggle">&#9660;</p>
                 </div>
                 <div id="exercise-btn" class="columns hide-small">
                     <p id="ex-1">Exercise 1</p>
@@ -22,7 +24,7 @@
                 <p>How many minutes until class?</p>
                 <div class="slidecontainer">
                     <input type="range" min="0" max="60" class="slider" id="myRange">
-                    <p id="slider-time"><span id="demo"></span></p>
+                    <p><span id="slider-time"></span> minutes</p>
                     <p id="slider-output"></p>
                     </div>
             </div>

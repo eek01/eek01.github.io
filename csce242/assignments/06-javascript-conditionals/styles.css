@@ -35,6 +35,9 @@ body {
     width: 50%;
     margin: auto;
 }
+#p-toggle {
+    color: #145416;
+}
 
 .hide-small {
     display: none;

@@ -5,7 +5,7 @@ window.onload = () => {
     output.innerHTML = slider.value;
 
     slider.oninput = function() {
-        output.innerHTML = this.value + " minutes";
+        output.innerHTML = this.value;
         const p = document.getElementById("slider-output"); 
 
         if(this.value < 15) {
@@ -48,9 +48,16 @@ window.onload = () => {
         }
     }
 
+
     // toggle navv!
     document.getElementById("toggle-nav").onclick = () => {
+        const pToggle = document.getElementById("p-toggle");
         document.querySelector("#exercise-btn").classList.toggle("hide-small");
+        if (pToggle.textContent.trim() === "▼") {
+            pToggle.textContent = "▲";
+        } else {
+            pToggle.textContent = "▼";
+        }
     };
 
 
