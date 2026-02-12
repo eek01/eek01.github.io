@@ -9,20 +9,31 @@
             <h3>If Statements</h3>
         </header>
         <main id="main-content">
-            <div id="exercise-btn" class="columns">
-                <p id="ex-1">Exercise 1</p>
-                <p id="ex-2">Exercise 2</p>
-            </div>
-            <div id="ex-one-content">
+            <nav>
+                <div id="toggle-nav">
+                    <p>&#9660;</p>
+                </div>
+                <div id="exercise-btn" class="columns hide-small">
+                    <p id="ex-1">Exercise 1</p>
+                    <p id="ex-2">Exercise 2</p>
+                </div>
+            </nav>
+            <div id="ex-one-content" class="hide">
                 <p>How many minutes until class?</p>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="60" class="slider" id="myRange">
+                    <p id="slider-time"><span id="demo"></span></p>
+                    <p id="slider-output"></p>
+                    </div>
             </div>
-            <div id="ex-two-content">
+            <div id="ex-two-content" class="hide">
                 <h4>Countdown till class</h4>
-                <p id="countdown-txt"></p>
+                <p id="countdown-txt">hi!</p>
             </div>
         </main>
         <footer>
             <p>@erinkelly.com</p>
         </footer>
+        <script src="script.js"></script> 
     </body>
 </html>
