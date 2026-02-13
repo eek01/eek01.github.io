@@ -43,6 +43,7 @@
 #main-footer {
     background: var(--footer);
 }
+
 #main-footer-content {
     width: 35%;
     margin: auto;
