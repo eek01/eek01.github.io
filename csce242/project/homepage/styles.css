@@ -101,7 +101,7 @@
     height:2px;
     background-color: var(--footer);
     margin:6px 0;
-}
+}m
 
 /*IMAGES*/
 #title img {
@@ -311,6 +311,7 @@ body {
     position: relative;
 }
 #main-quick-shop-left, #main-quick-shop-right {
+    font-family: "Galindo", sans-serif;
     padding: 15px;
     border:none;
     border-radius: 10px;
