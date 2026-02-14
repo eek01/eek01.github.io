@@ -10,6 +10,7 @@
     --mens: #E3F2FF;
     --btn-background: rgba(5, 113, 211, 0.8);
     --text-block: rgba(255, 255, 255, 0.9);
+    --shadow:gray;
 }
 #main-header {
     width: 100%;
@@ -41,10 +42,6 @@
 #shop-sale {
     border-bottom: 1px solid var(--border);
 }
-#shop-sale-txt {
-    background: var(--footer);
-    width: 100%;
-}
 #quick-shop {
     background: var(--home);
     border-bottom: 1px solid var(--border);
@@ -54,8 +51,8 @@
 }
 #main-footer {
     background: var(--footer);
+    padding-bottom: 2px;
 }
-
 #main-footer-content {
     width: 35%;
     margin: auto;
@@ -125,8 +122,8 @@
 }
 #sale-flower2 {
     position: absolute;
-    left: 3%;
-    top:7%;
+    left: 5%;
+    top:30%;
 }
 .main-quick-shop-width {
     margin: 20px;
@@ -146,6 +143,7 @@
     /* width: 100%; */
     border-radius: 10px;
     margin: 20px;
+    box-shadow: 0 5px 5px var(--shadow);
 }
 .container {
     position: relative;
@@ -216,14 +214,17 @@ body {
     padding-left: 20px;
 }
 #shop-sale-txt {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: var(--footer);
+    width: 100%;
 }
-#shop-sale-txt div {
-    display: block;
+#sale-content-wrapper{
+    position: relative;
+    display: inline-block;
     text-align: center;
+    padding: 100px;
 }
 #shop-sale-txt h1 {
     margin: 0;
@@ -340,8 +341,8 @@ body {
     }
 } 
 
-/*LARGER DEVICES*/
-@media (min-width: 768px) {
+/*LARGER DEVICES 768*/
+@media (min-width: 1024px) {
     #main-header {
         background:var(--main-header);
         display: flex;
@@ -397,47 +398,47 @@ body {
     /*IMAGES*/
     #sale-flower1 {
         position: absolute;
-        left: 300px;
-        top:140px;
+        left:-10%;
+        top:1%;
     }
     #sale-flower2{
         position: absolute;
-        left: 420px;
-        top:140px;
+        left:10%;
+        top:-7%;
     }
     #sale-flower3 {
         position: absolute;
-        left: 380px;
-        top:280px;
+        left: 10%;
+        top:34%;
     }
     #sale-flower4{
         position: absolute;
-        left: 403px;
-        top:165px;
+        left:5%;
+        top:5%;
     }
     #sale-flower5 {
         position: absolute;
-        left: 350px;
-        top:300px;
+        left:5%;
+        top:45%;
     }
     #sale-flower6{
         position: absolute;
-        right: 300px;
-        top:270px; 
+        right:-5%;
+        top:45%;
     }
     #sale-flower7{
         position: absolute;
-        right: 430px;
-        top:360px; 
+        right:20%;
+        top:65%;
     }
     #sale-flower8 {
         position: absolute;
-        right: 450px;
-        top:340px; 
+        right:20%;
+        top:66%;
     }
     #sale-flower9{
         position: absolute;
-        right: 390px;
-        top:280px;    
+        right:15%;
+        top:50%;  
     }
 }
