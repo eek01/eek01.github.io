@@ -119,6 +119,8 @@
 }
 #shop-sale-img img {
     width: 100%;
+    margin-bottom: -7px;
+    padding: 0;
 }
 #sale-flower2 {
     position: absolute;
