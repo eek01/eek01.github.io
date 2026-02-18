@@ -12,6 +12,8 @@
     --text-block: rgba(255, 255, 255, 0.9);
     --shadow:gray;
     --shop-txt: #093F70;
+    --impact: #FFCED4;
+    --overlay: rgba(9,63,112,0.4);
 }
 header {
     width: 100%;
@@ -63,7 +65,7 @@ body {
     margin: 0;
     background: var(--womens);
 }
-#shopping-shop-container {
+#shop-container {
     padding: 75px;
     border-bottom: 1px solid var(--border);
 }
@@ -77,11 +79,11 @@ body {
     flex-wrap: wrap;
     border-radius: 10px;
 }
-.womens-shop-section {
+.shop-section {
     margin: 30px;
 }
 /*womens-shop*/
-#shop-container {
+#womens-shop-container {
     background: var(--womens);
     padding: 75px;
 }
@@ -97,7 +99,7 @@ body {
     margin: 0;
     background: var(--home);
 }
-#shopping-shop-container {
+#shop-container {
     padding: 75px;
     border-bottom: 1px solid var(--border);
 }
@@ -111,7 +113,7 @@ body {
     flex-wrap: wrap;
     border-radius: 10px;
 }
-.womens-shop-section {
+.shop-section {
     margin: 30px;
 }
 /*mens*/
@@ -119,7 +121,7 @@ body {
     margin: 0;
     background: var(--footer);
 }
-#shopping-shop-container {
+#shop-container {
     padding: 75px;
     border-bottom: 1px solid var(--border);
 }
@@ -133,8 +135,14 @@ body {
     flex-wrap: wrap;
     border-radius: 10px;
 }
-.womens-shop-section {
+.shop-section {
     margin: 30px;
+}
+/*impact*/
+#nonprofit-highlights {
+    position: relative;
+    background: var(--shop-txt);
+    width: 100%;
 }
 
 /*NAVIGATION*/
@@ -289,7 +297,7 @@ header a, #footer-nav-bottom a {
     margin: 0;
 }
 /*womens*/
-.womens-shop-section img {
+.shop-section img {
     width: 100%;
     border-radius: 10px;
 }
@@ -297,6 +305,47 @@ header a, #footer-nav-bottom a {
 #shop-img {
     display: flex;
     justify-content: space-around;
+}
+/*impact*/
+#impact-title img, #nonprofit img {
+    width: 100%;
+    display: block;
+}
+#impact-title {
+    position: relative;
+}
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay);
+}  
+
+#nonprofit-highlight-img {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-evenly;
+    text-align: center;
+} 
+#nonprofit-highlight-img img {
+    border-radius: 10px;
+    margin: 20px;
+}
+.nonprofit-width {
+    margin: 20px;
+}
+.nonprofit-container img {
+    /* width: 100%; */
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 5px 5px var(--shadow);
+}
+.nonptofit-container {
+    position: relative;
+    padding:0;
 }
 
 /*MAIN IMAGE COLLAGE*/
@@ -400,6 +449,35 @@ header li {
 #mens-search-sort {
     color: var(--mens);
 }
+/*impact*/
+#nonprofit-txt {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color:var(--shop-txt);
+    background: var(--impact);
+}
+#nonprofit-highlights h1 {
+    color:var(--mens);
+    text-align: center;
+    margin: 0;
+    padding-top:30px;
+}
+#impact-title-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--mens);
+}
+#impact-title-txt h1 {
+    font-size: 48px;
+}
+
+
+
+
 
 /*BUTTON*/
 #main-shop-btns {
@@ -492,6 +570,27 @@ header li {
     background: none;
     border: none;
     color: var(--mens);
+}
+/*impact*/
+#nonprofit-btn-left, #nonprofit-btn-right {
+    font-family: "Galindo", sans-serif;
+    padding: 15px;
+    border:none;
+    border-radius: 10px;
+    background: var(--footer-txt);
+    font-size: larger;
+    color: var(--footer);
+}
+#nonprofit-btn-left {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    z-index: 2;
+}
+#nonprofit-btn-right {
+    position: absolute;
+    right: 30px;
+    top: 50%;
 }
 
 /* SMALLER DEVIES */
