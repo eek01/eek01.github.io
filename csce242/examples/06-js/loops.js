@@ -31,3 +31,54 @@ document.getElementById("btn-count-range").onclick = () => {
     }
 
 };
+
+document.getElementById("a-show-toys").onclick = (e) => {
+    e.preventDefault(); //dont go to link destination
+    const toyList = document.getElementById("toy-list");
+    toyList.innerHTML = "";
+
+    const toys = ["fish", "guitars", "popsicle sticks", "rc cars", "shoe"];
+
+    //traditional for loop!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // for (let i = 0; i < toys.length; i++) {
+    //     const li = document.createElement("li");
+    //     li.innerHTML = toys[i];
+    //     toyList.append(li);
+    // }
+
+    //other way (preferred)
+    //can do (toy,i) 
+    toys.forEach((toy)=>{
+        const li = document.createElement("li");
+        li.innerHTML = toy;
+        toyList.append(li);
+    });
+
+};
+
+//Associative Array
+const toyPrices = [];
+toyPrices["fish"] = 2.99;
+toyPrices["guitar"] = 200.00;
+toyPrices["popsicle sticks"] = 0.10;
+toyPrices["rc car"] = 59.99;
+toyPrices["shoe"] = 49.99;
+
+
+for(let toy in toyPrices) {
+    const toyTable = document.getElementById("toy-table");
+    const tr = document.createElement("tr");
+    toyTable.append(tr);
+    const tdToy = document.createElement("td");
+    tdToy.innerHTML = toy;
+    tr.append(tdToy);
+
+    const tdPrice = document.createElement("td");
+    tdPrice.innerHTML = `$${toyPrices[toy]}`;
+    tr.append(tdPrice);
+
+    tr.onclick = () => {
+        document.getElementById("p-toy-desc").innerHTML = 
+            `You want a ${toy}, so ask your mom for $${toyPrices[toy]}`
+    };
+}
