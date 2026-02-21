@@ -28,7 +28,9 @@ document.getElementById("dropdown-happy").onclick = () => {
         console.log("added songgg");
 
         liSong.onclick = () => {
-            ytFrame.classList.remove("hidden");
+            if(!(ytFrame.classList.contains("hidden"))) {
+                ytFrame.classList.remove("hidden");
+            }
             ytFrame.setAttribute("src", `${source}${happySongs[song]}`);
             console.log(`${source}${happySongs[song]}`);
         }
@@ -46,7 +48,9 @@ document.getElementById("dropdown-sad").onclick = () => {
         console.log("added songgg");
 
         liSong.onclick = () => {
-            ytFrame.classList.remove("hidden");
+            if(!(ytFrame.classList.contains("hidden"))) {
+                ytFrame.classList.remove("hidden");
+            }
             ytFrame.setAttribute("src", `${source}${sadSongs[song]}`);
             console.log(`${source}${sadSongs[song]}`);
         }
