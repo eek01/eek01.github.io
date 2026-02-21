@@ -8,9 +8,9 @@ happySongs["I'm Walking on Sunshine by Katrine and the Waves"] = "gI5as1yeR9Lwsv
 const sadSongs = [];
 sadSongs["Happier Then Ever by Billie Eillish"] = "ZFtTh8T3ZpgZkDkY";
 sadSongs["Someone You Loved by Lewis Capaldi"] = "joU3CQwhaUCV2BXC";
-sadSongs["Someone Like You by Adele"] = "Q9bi9gwiEWlkY4WM";
+sadSongs["Someone Like You by Adele"] = "Ec-74zqqvOqpayiw";
 sadSongs["Fix You by Coldplay"] = "TLouELYQ6RatbJik";
-sadSongs["Hurt by Johnny Cash"] = "bwQrEh3ND6G6iIe1";
+sadSongs["Hurt by Johnny Cash"] = "U3FP7k9pMAYoip9y";
 
 const dropBtn = document.getElementById("dropbtn");
 const ytFrame = document.getElementById("yt-frame");
