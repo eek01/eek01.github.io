@@ -12,8 +12,9 @@ sadSongs["Someone Like You by Adele"] = "Q9bi9gwiEWlkY4WM";
 sadSongs["Fix You by Coldplay"] = "TLouELYQ6RatbJik";
 sadSongs["Hurt by Johnny Cash"] = "bwQrEh3ND6G6iIe1";
 
-dropBtn = document.getElementById("dropbtn");
-ytFrame = document.getElementById("yt-frame");
+const dropBtn = document.getElementById("dropbtn");
+const ytFrame = document.getElementById("yt-frame");
+const source = ytFrame.getAttribute("src");
 
 document.getElementById("dropdown-happy").onclick = () => {
     dropBtn.innerHTML = "happy";
@@ -28,9 +29,8 @@ document.getElementById("dropdown-happy").onclick = () => {
 
         liSong.onclick = () => {
             ytFrame.classList.remove("hidden");
-            srcTxt = ytFrame.getAttribute("src");
-            ytFrame.setAttribute("src", `${srcTxt}${happySongs[song]}`);
-            console.log(`${srcTxt}${happySongs[song]}`);
+            ytFrame.setAttribute("src", `${source}${happySongs[song]}`);
+            console.log(`${source}${happySongs[song]}`);
         }
     }
 };
