@@ -1,0 +1,75 @@
+/*structure*/
+body {
+    background: lightyellow;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*typograpgy*/
+body {
+    text-align: center;
+}
+header h1, footer {
+    color: rgb(123, 52, 64);
+}
+header h2 {
+    color: rgb(181, 98, 112);
+}
+#main-content {
+    justify-content: center;
+    color: rgb(123, 52, 64);
+}
+#song-list {
+    list-style: none;
+    text-align: left;
+    width: 30%;
+    margin: auto;
+    color: rgb(123, 52, 64);
+    text-decoration: underline;
+}
+#song-list li {
+    padding:10px;
+}
+
+/*iframe*/
+.hidden {
+    display: none;
+}
+
+/*dropdown - from w3schools*/
+#dropbtn {
+    color: rgb(123, 52, 64);
+    margin: 12px;
+    padding: 5px 10px;
+    border: 2px solid pink;
+    cursor: pointer;
+    background: lightyellow;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightyellow;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content p {
+  color: black;
+  padding: 5px 10px;
+  display: block;
+}
+.dropdown-content p:hover {
+  background-color: pink;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: rgb(255, 255, 193);
+}
+
+
+.columns {
+    display: flex;
+}

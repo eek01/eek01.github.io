@@ -3,7 +3,7 @@ document.getElementById("btn-first-loop").onclick = () => {
 
     for(let i = 0; i < 10; i++){
         const li = document.createElement("li");
-        li.innerHTML = `I'm thie ${i+1} element`;
+        li.innerHTML = `I'm the ${i+1} element`;
         ul.append(li);
     }
 };
