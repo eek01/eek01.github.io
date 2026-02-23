@@ -30,6 +30,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 20px;
 }
 #shop-mens-womens {
     position: relative;
@@ -64,6 +65,7 @@ body {
 #womens-content {
     margin: 0;
     background: var(--womens);
+    border-bottom: 1px solid var(--border);
 }
 #shop-container {
     padding: 75px;
@@ -78,9 +80,18 @@ body {
     justify-content: space-evenly;
     flex-wrap: wrap;
     border-radius: 10px;
+    position: relative;
 }
 .shop-section {
     margin: 30px;
+}
+#mens-shop {
+    display: flex;
+    background: var(--mens);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    position: relative;
 }
 /*womens-shop*/
 #womens-shop-container {
@@ -144,6 +155,11 @@ body {
     background: var(--shop-txt);
     width: 100%;
 }
+/*details-shop*/
+#shop-detail-container {
+    border-bottom: 1px solid var(--border);
+
+}
 
 /*NAVIGATION*/
 header ul {
@@ -162,6 +178,10 @@ header li:not(:last-child) {
 header a, #footer-nav-bottom a {
     text-decoration: none;
     color: var(--header-txt);
+}
+.container a {
+    text-decoration: none;
+    color: var(--border)
 }
 #footer-nav-bottom {
     width:45%;
@@ -183,15 +203,26 @@ header a, #footer-nav-bottom a {
 #footer-nav-bottom li:not(:last-child)::after {
     display: none;
 }
-#toggle-nav div {
+#toggle-nav div, #toggle-search div, #mens-toggle-search div{
     width: 25px;
     height:2px;
     background-color: var(--footer);
     margin:6px 0;
 }
+#toggle-search div, #mens-toggle-search div{
+    width: 25px;
+    height:2px;
+    background-color: var(--shop-txt);
+    margin:6px 0;
+}
+#mens-toggle-search div{
+    width: 25px;
+    height:2px;
+    background-color: var(--mens);
+    margin:6px 0;
+}
 /*womens*/
 #womens-search-drop ul {
-    display: flex;
     padding-left: 0;
 }
 #womens-search-drop li {
@@ -204,12 +235,20 @@ header a, #footer-nav-bottom a {
     justify-content: space-between;
 }
 #womens-search-sort {
+    display: flex;
+    align-items: center;
     margin:10px;
 }
 #womens-search-sort-bar {
-    height:50px;
     display: flex;
-    border: 1px solid var(--border);
+    justify-content: space-between;
+    border: 1px solid var(--shop-txt);
+    width: 150px;
+    padding:0 10px;
+    margin: 5px;
+}
+#womens-search-sort-bar:hover {
+    cursor: pointer;
 }
 #womens-shop a {
     text-decoration: none;
@@ -217,7 +256,6 @@ header a, #footer-nav-bottom a {
 }
 /*mens*/
 #mens-search-drop ul {
-    display: flex;
     padding-left: 0;
 }
 #mens-search-drop li {
@@ -226,12 +264,32 @@ header a, #footer-nav-bottom a {
     color: var(--mens);
 }
 #mens-search-sort {
+    display: flex;
+    align-items: center;
     margin:10px;
 }
 #mens-search-sort-bar {
-    height:50px;
     display: flex;
+    justify-content: space-between;
     border: 1px solid var(--mens);
+    width: 150px;
+    padding:0 10px;
+    margin: 5px;
+}
+#mens-search-sort-bar:hover {
+    cursor: pointer;
+}
+/*shop*/
+#back-btn {
+    text-decoration: none;
+    color: var(--shop-txt);
+}
+#back-btn p {
+    padding: 15px;
+    margin: 0;
+}
+#buy-now-btn:hover {
+    cursor: pointer;
 }
 
 
@@ -443,6 +501,16 @@ header li {
 /*womens-shop*/
 #shop-description {
     margin: 0 40px 40px 0;
+    color: var(--shop-txt);
+}
+#shop-description h3 {
+    margin-bottom: 0;
+}
+#shop-description h5 {
+    margin-top: 5px;
+}
+#shop-description p {
+    margin-bottom: 1px;
 }
 /*mens*/
 #mens-search-sort {
@@ -480,6 +548,16 @@ header li {
 .nonprofit-txt-block h3 {
     color: var(--mens);
     margin: 0 0 30px 0;
+}
+#shop-details h5 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+#shop-details h6 {
+    margin: 0 10px;
+}
+.shop-section-txt {
+    color: var(--shop-txt);
 }
 
 
@@ -563,20 +641,38 @@ header li {
     right: 30px;
     top: 50%;
 }
-.hide-small {
-    display: none;
-}
 /*womens*/
+#womens-search-sort-btn {
+    display: flex;
+    align-items: center;
+}
 #womens-search-sort-btn button{
     background: none;
     border: none;
     color: var(--border)
 }
 /*mens*/
+#mens-search-sort-btn {
+    display: flex;
+    align-items: center;
+}
 #mens-search-sort-btn button{
     background: none;
     border: none;
     color: var(--mens);
+}
+#bottom-search-sort-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 10px;
+    right: 10px;
+    color: var(--shop-txt);
+}
+#bottom-search-sort-btn button{
+    background: none;
+    border: none;
+    color: var(--border)
 }
 /*impact*/
 #nonprofit-btn-left, #nonprofit-btn-right {
@@ -598,6 +694,39 @@ header li {
     position: absolute;
     right: 30px;
     top: 50%;
+}
+#buy-now-btn {
+    width: 100%;
+    background: var(--shop-txt);
+    color: var(--mens);
+    font-size: large;
+    border: none;
+    font-family: "Galindo", sans-serif;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+#size-btn {
+    display: flex;
+}
+#size-btn div {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: var(--mens);
+    border: 1px solid var(--shop-txt);
+    margin: 10px 10px 10px 0px;
+}
+#size-btn div:hover {
+    cursor: pointer;
+}
+#size-btn h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px 0;
+}
+.hide-small {
+    display: none;
 }
 
 /* SMALLER DEVIES */
@@ -625,10 +754,16 @@ header li {
     header li:not(:last-child) {
         border-bottom: none;
     }
-    #toggle-nav {
+    #main-header-nav-bar {
+        display: flex;
+    }
+    /* #search-bar-items {
+        display: flex;
+    } */
+    #toggle-nav, #toggle-search, #mens-toggle-search {
         display: none;
     }
-    nav ul {
+    nav ul, #womens-search-drop ul, #mens-search-drop ul {
         display:flex;
     }
     .one {
@@ -657,10 +792,6 @@ header li {
         content:"|";
         color: var(--footer-txt);
         margin: 0 20px 0;
-
-    }
-    .hide-small {
-        display: flex;
     }
     /*IMAGES*/
     #sale-flower1 {
