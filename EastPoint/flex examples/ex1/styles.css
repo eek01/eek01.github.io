@@ -1,0 +1,15 @@
+#container {
+    display: flex;
+}
+#first {
+    flex: 1;
+    background: pink;
+    margin: 10px;
+    text-align: center;
+}
+#second {
+    flex: 1;
+    background: pink;
+    margin: 10px;
+    text-align: center;
+}

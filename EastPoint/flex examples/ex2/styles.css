@@ -1,0 +1,61 @@
+#container {
+    display: flex;
+}
+#first {
+    flex: 1;
+    background: pink;
+    margin: 10px;
+    text-align: center;
+}
+#second {
+    flex: 1;
+    background: pink;
+    margin: 10px;
+    text-align: center;
+}
+#container2 {
+    display: flex;
+}
+#first2 {
+    flex: 3;
+    background: lightblue;
+    margin: 10px;
+    text-align: center;
+}
+#second2 {
+    flex: 1;
+    background: lightblue;
+    margin: 10px;
+    text-align: center;
+}
+#container3 {
+    display: flex;
+}
+#first3 {
+    flex: 2;
+    background: lightsalmon;
+    margin: 10px;
+    text-align: center;
+}
+#second3 {
+    flex: 1;
+    background: lightsalmon;
+    margin: 10px;
+    text-align: center;
+}
+#third3 {
+    flex: 2;
+    background: lightsalmon;
+    margin: 10px;
+    text-align: center;
+}
+/* #container4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.fourth {
+    width:195px;
+    margin: 10px;
+    background: lightgreen;
+    text-align: center;
+} */

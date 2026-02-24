@@ -1,0 +1,51 @@
+#container {
+    display: flex;
+}
+#div1 {
+    background: pink;
+    margin: 10px;
+    text-align: center;
+    flex:1;
+}
+#div2 {
+    background: pink;
+    margin: 10px;
+    text-align: center;
+    flex:1;
+}
+#container2 {
+    display: flex;
+}
+#div3 {
+    background: lightblue;
+    margin: 10px;
+    text-align: center;
+    flex:4;
+}
+#div4 {
+    background: lightblue;
+    margin: 10px;
+    text-align: center;
+    flex:1;
+}
+#container3 {
+    display: flex;
+}
+#div5 {
+    background: lightsalmon;
+    margin: 10px;
+    text-align: center;
+    flex:2;
+}
+#div6 {
+    background: lightsalmon;
+    margin: 10px;
+    text-align: center;
+    flex:1;
+}
+#div7 {
+    background: lightsalmon;
+    margin: 10px;
+    text-align: center;
+    flex:2;
+}
