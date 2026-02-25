@@ -1,51 +1,30 @@
-#container {
-    display: flex;
+section {
+    background: white;
+    color: darkslateblue;
+    border: 5px solid lightpink;
+    padding: 15px;
+    width:100%;
+    margin: 5px;
 }
-#div1 {
-    background: pink;
-    margin: 10px;
-    text-align: center;
-    flex:1;
-}
-#div2 {
-    background: pink;
-    margin: 10px;
-    text-align: center;
-    flex:1;
-}
-#container2 {
-    display: flex;
-}
-#div3 {
-    background: lightblue;
-    margin: 10px;
-    text-align: center;
-    flex:4;
-}
-#div4 {
-    background: lightblue;
-    margin: 10px;
-    text-align: center;
-    flex:1;
-}
-#container3 {
-    display: flex;
-}
-#div5 {
-    background: lightsalmon;
-    margin: 10px;
-    text-align: center;
-    flex:2;
-}
-#div6 {
-    background: lightsalmon;
-    margin: 10px;
-    text-align: center;
-    flex:1;
-}
-#div7 {
-    background: lightsalmon;
-    margin: 10px;
-    text-align: center;
-    flex:2;
+
+/*use these styles on large screens eg)laptop or desktop*/
+@media screen and (min-width: 768px) {
+    .columns {
+        display:flex;
+    }
+    body {
+        background-image: url("images/flexBG.jpg");
+    }
+    .one {
+        flex:1;
+    }
+    .two {
+        flex:2;
+    }
+    .three {
+        flex: 3;
+    }
+    .four {
+        flex:4;
+    }
 }
