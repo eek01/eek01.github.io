@@ -71,20 +71,41 @@ class Song {
         modalContainer.append(columnsDiv);
 
         const ytCodeContainer = document.createElement("iframe");
-        ytCodeContainer.setAttribute(src, value);
+        this.setAttributes(ytCodeContainer);
 
+        columnsDiv.append(ytCodeContainer);
 
-        //need to create columns div
-        // inside of that need iframe and Title
-        //                                By artist
-        //                                Album, year
-        //                                genre
+        columnsDiv.append(this.modalInfo());
+
+        console.log("added modal!!");
+        return modalDiv;
     }
 
+    modalInfo() {
+        const div = document.createElement("div");
+        
+        const modalTitle = document.createElement("h3");
+        modalTitle.innerHTML = this.title;
+        const modalArtist = document.createElement("p");
+        modalArtist.innerHTML = this.artist;
+        const modalAlbum = document.createElement("p");
+        modalAlbum.innerHTML = this.album+", "+this.year;
+        const modalGenre = document.createElement("p");
+        modalGenre.innerHTML = this.genre;
+
+        div.append(modalTitle);
+        div.append(modalArtist);
+        div.append(modalAlbum);
+        div.append(modalGenre);
+
+        return div;
+
+    }
     
-    setAttributes(frame, {
-        src=`www.youtube.com/embed/${this.ytCode}`,
-    });
+    setAttributes(frame) {
+        frame.setAttribute("src", `www.youtube.com/embed/${this.ytCode}`);
+        frame.setAttribute("allowfullscreen", true);
+    }
 }
 
 
