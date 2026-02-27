@@ -219,10 +219,45 @@ a {
     color:#e29578;
 }
 
+/* Classes */
+.dog {
+    background:#EDF6F9;
+    border:5px solid #E29578;
+    text-align:center;
+    margin-bottom:20px;
+    padding:10px;
+    padding-bottom:30px;
+}
+
+.dog img {
+    margin:auto;
+    display:block;
+}
+
+.dog h3 {
+    color:#E29578;
+    font-size:1.5em;
+}
+
+.dog ul {
+    text-align: left;
+    color:darkslategray;
+}
+
+.dog strong {
+    color:#E29578;
+}
+
+.dog a {
+    text-decoration: none;
+}
+
+
 /* Hide */
 .hide-small {
     display:none;
 }
+
 
 /* Larger devices */
 @media (min-width: 768px) {

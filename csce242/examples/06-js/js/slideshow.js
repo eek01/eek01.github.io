@@ -32,5 +32,7 @@ const getCurrentSlide = () => {
 //slide
 const slide = (current, next) => {
     current.classList.add("hidden");
+    current.classList.remove("columns");
     next.classList.remove("hidden");
+    next.classList.add("columns");
 }
