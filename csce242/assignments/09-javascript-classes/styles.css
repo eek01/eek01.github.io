@@ -5,12 +5,21 @@
     background: rgb(202, 231, 241);
     border-radius: 10px;
 }
+.modal-txt {
+    flex:2;
+    margin: 20px;
+}
 
 /*images*/
 img {
     width: 100%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+iframe {
+    width: 100%;
+    flex:1;
+    margin: 10px 10px 10px 0;
 }
 
 /*typography*/
