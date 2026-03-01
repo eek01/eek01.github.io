@@ -1,4 +1,7 @@
 /*structure*/
+body {
+    background: #2D5265;
+}
 .song-div {
     margin: 20px;
     text-align: center;
@@ -8,6 +11,9 @@
 .modal-txt {
     flex:2;
     margin: 20px;
+}
+.w3-container {
+    background: #d3e5e7;
 }
 
 /*images*/
@@ -23,8 +29,20 @@ iframe {
 }
 
 /*typography*/
+header h1, footer {
+    color: #d3e5e7;
+}
+header h2 {
+    color: #A4C0C3;
+}
 header, footer {
     text-align: center;
+}
+#music {
+    color: #874871;
+}
+.modal-txt p, .song-div h5 {
+    color: #15313e;
 }
 
 
