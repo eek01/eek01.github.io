@@ -23,6 +23,7 @@ body {
 section h3 {
     text-align: center;
 }
+
 /*Projects*/
 #projects section{
     background: #F2778D;
@@ -70,7 +71,7 @@ p {
 }
 
 /*flex-wrap: wrap; TO MAKE ASSIGNMETSS AND PROJECTS GO TO NEXT LINE*/
-/*img {
+/* img {
     max-width: 100%
-}*/
+} */
 /*^^ ensures ur img is never bigger than the container its in*/
