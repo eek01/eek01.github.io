@@ -1,0 +1,23 @@
+#container {
+    width: 80%;
+    margin: auto;
+}
+.box {
+    background: blue;
+    margin: 10px;
+    height:250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .columns {
+        display:flex;
+    }
+    .one {
+        flex:1;
+    }
+}
