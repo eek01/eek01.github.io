@@ -5,6 +5,7 @@
         "title":"Open Back Button-Down",
         "price":17,
         "features":["Open Back","Tie Back"],
+        "care":["Rayon, Cotton", "Machine wash"],
         "size_fit":["S","6'"],
         "link":"#"
     },
@@ -14,6 +15,7 @@
         "title":"Chunky Knit Sweater",
         "price":60,
         "features":["Turtle Neck", "Over Sized Fit"],
+        "care":["Rayon, Cotton", "Machine wash"],
         "size_fit":["S","5'4"],
         "link":"#"
     },
@@ -23,6 +25,7 @@
         "title":"Wrap Dress",
         "price":29,
         "features":["Rouched Waist","V-Neck Neckline"],
+        "care":["Rayon, Cotton", "Machine wash"],
         "size_fit":["XS","5'10"],
         "link":"#"
     },
@@ -31,7 +34,8 @@
         "img_name":"womens4.jpg",
         "title":"Khaki Straight Leg Pants",
         "price":59,
-        "features":["8in Inseam", "smth"],
+        "features":["High Waisted"],
+        "care":["Rayon, Cotton", "Machine wash"],
         "size_fit":["S","5'6"],
         "link":"#"
     },
@@ -41,6 +45,7 @@
         "title":"Metallic Lace Dress",
         "price":16,
         "features":["Ruffled Lace Collar", "Black Lining"],
+        "care":["Rayon, Cotton", "Machine wash"],
         "size_fit":["XS","5'10"],
         "link":"#"
     },
@@ -50,6 +55,7 @@
         "title":"White Heeled Sandals",
         "price":49,
         "features":["Adjustable Ankle Strap"],
+        "care":["Rayon, Cotton", "Machine wash"],
         "size_fit":["9","5'7"],
         "link":"#"
     },
@@ -59,6 +65,7 @@
         "title":"White Sneakers",
         "price":99,
         "features":["Platform Sole", "Memory Foam Insole"],
+        "care":["Rayon, Cotton", "Machine wash"],
         "size_fit":["7 1/2", "5'9"],
         "link":"#"
     },
@@ -68,6 +75,7 @@
         "title":"Pink Puffer",
         "price": 19,
         "features":["Zipper"],
+        "care":["Rayon, Cotton", "Machine wash"],
         "size_fit":["S","5'7"],
         "link":"#"
     },
@@ -77,6 +85,7 @@
         "title":"Brown Button-down",
         "price": 28,
         "features":["Light Brown Embroidered Detail", "Black Buttons"],
+        "care":["Rayon, Cotton", "Machine wash"],
         "size_fit":["S", "5'9"],
         "link":"womens-shop.html"
     }

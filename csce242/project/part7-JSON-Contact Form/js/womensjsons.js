@@ -34,7 +34,8 @@ const showWomens = async() => {
         div.append(name);
 
         const price = document.createElement("p");
-
+        price.innerHTML = `$${woman.price}`;
+        div.append(price);
 
     });
 };
