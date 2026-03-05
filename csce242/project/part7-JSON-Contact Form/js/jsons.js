@@ -13,5 +13,12 @@ const showWomens = async() => {
 
     womens.forEach(women)=>{
         const a = document.createElement("a");
+        womensDiv.prepend(a);
+
+        const section = document.createElement("section");
+        section.classList.add("shop-section");
+        a.append(section);
+
+
     };
 };

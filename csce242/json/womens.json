@@ -5,7 +5,8 @@
         "title":"Open Back Button-Down",
         "price":17,
         "features":["Open Back","Tie Back"],
-        "size_fit":["S","6'"]
+        "size_fit":["S","6'"],
+        "link":"#"
     },
     {
         "_id": 8,
@@ -13,7 +14,8 @@
         "title":"Chunky Knit Sweater",
         "price":60,
         "features":["Turtle Neck", "Over Sized Fit"],
-        "size_fit":["S","5'4"]
+        "size_fit":["S","5'4"],
+        "link":"#"
     },
     {
         "_id": 7,
@@ -21,7 +23,8 @@
         "title":"Wrap Dress",
         "price":29,
         "features":["Rouched Waist","V-Neck Neckline"],
-        "size_fit":["XS","5'10"]
+        "size_fit":["XS","5'10"],
+        "link":"#"
     },
     {
         "_id": 6,
@@ -29,7 +32,8 @@
         "title":"Khaki Straight Leg Pants",
         "price":59,
         "features":["8in Inseam", "smth"],
-        "size_fit":["S","5'6"]
+        "size_fit":["S","5'6"],
+        "link":"#"
     },
     {
         "_id": 5,
@@ -37,7 +41,8 @@
         "title":"Metallic Lace Dress",
         "price":16,
         "features":["Ruffled Lace Collar", "Black Lining"],
-        "size_fit":["XS","5'10"]
+        "size_fit":["XS","5'10"],
+        "link":"#"
     },
     {
         "_id": 4,
@@ -45,7 +50,8 @@
         "title":"White Heeled Sandals",
         "price":49,
         "features":["Adjustable Ankle Strap"],
-        "size_fit":["9","5'7"]
+        "size_fit":["9","5'7"],
+        "link":"#"
     },
     {
         "_id": 3,
@@ -53,7 +59,8 @@
         "title":"White Sneakers",
         "price":99,
         "features":["Platform Sole", "Memory Foam Insole"],
-        "size_fit":["7 1/2", "5'9"]
+        "size_fit":["7 1/2", "5'9"],
+        "link":"#"
     },
     {
         "_id":2,
@@ -61,7 +68,8 @@
         "title":"Pink Puffer",
         "price": 19,
         "features":["Zipper"],
-        "size_fit":["S","5'7"]
+        "size_fit":["S","5'7"],
+        "link":"#"
     },
     {
         "_id": 1,
@@ -69,6 +77,7 @@
         "title":"Brown Button-down",
         "price": 28,
         "features":["Light Brown Embroidered Detail", "Black Buttons"],
-        "size_fit":["S", "5'9"]
+        "size_fit":["S", "5'9"],
+        "link":"womens-shop.html"
     }
 ]
