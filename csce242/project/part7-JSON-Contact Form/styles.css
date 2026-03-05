@@ -94,6 +94,14 @@ body {
     border-radius: 10px;
     position: relative;
 }
+#home-shop {
+    display: flex;
+    background: var(--main-header);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    position: relative;
+}
 .shop-section {
     margin: 30px;
 }
@@ -285,6 +293,10 @@ header a, #footer-nav-bottom a {
     cursor: pointer;
 }
 #womens-shop a {
+    text-decoration: none;
+    color: var(--shop-txt);
+}
+#home-shop a {
     text-decoration: none;
     color: var(--shop-txt);
 }
