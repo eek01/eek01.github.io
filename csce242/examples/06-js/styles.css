@@ -26,6 +26,15 @@ img {
     max-width:100%;
 }
 
+/*contact*/
+#map {
+    width:100%;
+    height:400px;
+}
+#contact-us label{
+    display:block;
+}
+
 /* Square */
 .area {
     background:#cdb4db;

@@ -1,0 +1,74 @@
+[
+    {
+        "_id": 1,
+        "img_name":"reverieImgButtonDown.jpg",
+        "title":"Brown Button-down",
+        "price": 28,
+        "features":["Light Brown Embroidered Detail", "Black Buttons"],
+        "size_fit":["S", "5'9"]
+    },
+    {
+        "_id":2,
+        "img_name":"reveriePuffer.png",
+        "title":"Pink Puffer",
+        "price": 19,
+        "features":["Zipper"],
+        "size_fit":["S","5'7"]
+    },
+    {
+        "_id": 3,
+        "img_name":"womens1.jpg",
+        "title":"White Sneakers",
+        "price":99,
+        "features":["Platform Sole", "Memory Foam Insole"],
+        "size_fit":["7 1/2", "5'9"]
+    },
+    {
+        "_id": 4,
+        "img_name":"womens2.jpg",
+        "title":"White Heeled Sandals",
+        "price":49,
+        "features":["Adjustable Ankle Strap"],
+        "size_fit":["9","5'7"]
+    },
+    {
+        "_id": 5,
+        "img_name":"womens3.jpg",
+        "title":"Metallic Lace Dress",
+        "price":16,
+        "features":["Ruffled Lace Collar", "Black Lining"],
+        "size_fit":["XS","5'10"]
+    },
+    {
+        "_id": 6,
+        "img_name":"womens4.jpg",
+        "title":"Khaki Straight Leg Pants",
+        "price":59,
+        "features":["8in Inseam", "smth"],
+        "size_fit":["S","5'6"]
+    },
+    {
+        "_id": 7,
+        "img_name":"womens5.jpg",
+        "title":"Wrap Dress",
+        "price":29,
+        "features":["Rouched Waist","V-Neck Neckline"],
+        "size_fit":["XS","5'10"]
+    },
+    {
+        "_id": 8,
+        "img_name":"womens6.jpg",
+        "title":"Chunky Knit Sweater",
+        "price":60,
+        "features":["Turtle Neck", "Over Sized Fit"],
+        "size_fit":["S","5'4"]
+    },
+    {
+        "_id": 9,
+        "img_name":"womens7.jpg",
+        "title":"Open Back Button-Down",
+        "price":17,
+        "features":["Open Back","Tie Back"],
+        "size_fit":["S","6'"]
+    }
+]
