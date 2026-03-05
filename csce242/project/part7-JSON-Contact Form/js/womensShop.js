@@ -123,8 +123,14 @@ const showWoman = async() => {
             detailDiv.append(h6);
     });
 
+    //Fit section
+    const fit = document.createElement("h5");
+    fit.innerHTML = "Size + Fit";
+    detailDiv.append(fit);
 
-
+    const fitInfo = document.createElement("h6");
+    fitInfo.innerHTML = `- Model wears size ${womens[8].size_fit[0]}, Model height is ${womens[8].size_fit[1]}`;
+    detailDiv.append(fitInfo);
 };
 
 showWoman();
