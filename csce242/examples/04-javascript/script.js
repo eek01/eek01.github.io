@@ -19,7 +19,7 @@ const bounceBall = () => {
 
 //var=global scope
 //let=changable
-//const=default, is need to change variable, change to let
+//const=default, if need to change variable, change to let
 
 // When the user clicks the button their name is written to paragraph
 const writeMessage = () => {
